@@ -10,17 +10,19 @@ class GerenciadorDeCep {
     }
 
     apiCep(cep) {
-        $.ajax({
-            url: "https://viacep.com.br/ws/" + cep + "/json/?callback=?",
-            success: function (dados) {
-                console.log('api chamada');
-                return dados;
-            },
-            error: function () {
-                console.log('CEP não encontrado');
-            }
-        });
-
+        try {
+            $.ajax({
+                url: "https://viacep.com.br/ws/" + cep + "/json/?callback=?",
+                success: function (dados) {
+                    return dados
+                },
+                error: function () {
+                    throw new Error ('CEP não encontrado');
+                }
+            });
+        } catch (error) {
+            console.error(error.message)
+        }
     }
 
 }
