@@ -1,9 +1,7 @@
-class GerenciadorDeEmail {
+class GerenciadorDeEmail extends Confirmador{
 
-  confirmaEmail(email,emailrepeat){
-    if(email === emailrepeat){
-      return true
-    }
+  constructor(){
+    super();
   }
 
   validaEmail(email) {
@@ -14,7 +12,6 @@ class GerenciadorDeEmail {
       if (email.match(emailValido)) {
 
         console.log("Email validado com sucesso");
-
         return email
 
       } else {
