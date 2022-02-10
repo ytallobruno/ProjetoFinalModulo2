@@ -1,18 +1,27 @@
 class GerenciadorDeCep {
 
-    validaCep(cep) {
-        const cepValido = /^[0-9]{8}$/;
-        if (cep.match(cepValido)) {
-            return true;
-        } else {
-            return false;
+    constructor(cep){
+        try {
+            if (cep.match(/^[0-9]{8}$/)){
+                this.cep = cep;
+                this.cepValidado = true;
+            } else{
+                this.cepValidado = false;
+                throw new Error('Cep inválido')
+            }
+        } catch (error) {
+            console.error(error.message)
         }
     }
 
-    apiCep(cep) {
+    getCepValidado(){
+        return this.cepValidado
+    }
+
+    apiCep() {
         try {
             $.ajax({
-                url: "https://viacep.com.br/ws/" + cep + "/json/?callback=?",
+                url: "https://viacep.com.br/ws/" + this.cep + "/json/?callback=?",
                 success: function (dados) {
                     return dados
                 },
@@ -24,5 +33,6 @@ class GerenciadorDeCep {
             console.error(error.message)
         }
     }
+
 
 }
