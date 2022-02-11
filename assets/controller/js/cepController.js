@@ -17,10 +17,10 @@ class ControladorCep {
 
     marcaElemento(){
         if(this.gerenciaCep.getCepValidado()){
-            this.cepView.mudaClasse(this.campoCep,'valido','invalido')
+            this.cepView.mudaClasse(this.campoCep,'border-success','border-danger')
 
         } else{
-            this.cepView.mudaClasse(this.campoCep,'invalido','valido')
+            this.cepView.mudaClasse(this.campoCep,'border-danger','border-success')
         }
     }
 
