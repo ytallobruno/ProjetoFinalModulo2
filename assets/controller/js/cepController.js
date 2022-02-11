@@ -10,8 +10,6 @@ class ControladorCep {
         this.gerenciaCep.apiCep();
         setTimeout(() => {
             this.dadosApi = this.gerenciaCep.getDadosApi();
-            console.log(this.dadosApi);
-            console.log(this.dadosApi.bairro);
             this.completaEnderecoForm();
         },1000);
         
