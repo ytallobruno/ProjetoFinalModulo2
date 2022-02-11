@@ -5,7 +5,7 @@ class VisualizadorCep extends ManipuladorDom{
     }
 
     renderizaCep(dados){
-        this.estado = $('#uf').val(dados.uf);
+        this.estado = $('#estado').val(dados.uf);
         this.cidade = $('#cidade').val(dados.localidade);
         this.bairro = $('#bairro').val(dados.bairro);
         this.rua = $('#rua').val(dados.logradouro);
