@@ -1,8 +1,4 @@
-class GerenciadorDeEmail extends Confirmador{
-
-  constructor(){
-    super();
-  }
+class GerenciadorDeEmail{
 
   validaEmail(email) {
 
