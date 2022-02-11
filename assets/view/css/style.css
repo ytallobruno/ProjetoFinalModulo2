@@ -1,0 +1,12 @@
+
+#fieldset {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 50%;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 5px;
+  }
