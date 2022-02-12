@@ -1,7 +1,14 @@
 /* GERAL */
+:root {
+  --azulescuro: #0b132b;
+  --azulmedio: #1c2541;
+  --azulclaro: #3a506b;
+  --azulagua: #5bc0be;
+}
+
 * {
   scrollbar-width: thin;
-  scrollbar-color: #1c2541 #fff;
+  scrollbar-color: var(--azulmedio) #fff;
   scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
@@ -11,18 +18,57 @@
   background: #fff;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #1c2541;
+  background-color: var(--azulmedio);
   border-radius: 10px;
   border: 3px solid #fff;
 }
 
-/* PRODUTOS */
+.botao-cor-especial {
+  background-color: var(--azulmedio);
+  color: #fff;
+  transition: .3s;
+}
+
+.botao-cor-especial:hover{
+  background-color: var(--azulclaro);
+  color: #fff;
+}
+
+.cor-link-navegacao {
+  color: var(--azulescuro);
+  transition: .3s;
+}
+
+.cor-link-navegacao:hover {
+  color: var(--azulagua);
+}
+
+
+/* HOME */
+
+/* SERVICOS */
+.fonte-titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+  .fonte-texto {
+  font-size: 1.5rem;
+}
+
 .card-largura {
   max-width: 25rem;
 }
 
 .card-posicao-imagem {
-  /* object-fit: cover; */
-  height: 15rem;
-  height: 15rem;
+  object-fit: contain;
+  height: 200px;
 }
+
+/* CADASTRO */
+
+/* CONTATO */
+
+/* LOGIN */
+
+/* RECUPERACAO SENHA */
