@@ -6,6 +6,11 @@
   --azulagua: #5bc0be;
 }
 
+body {
+  width: 100%;
+  height: calc(100% - 40px);
+}
+
 * {
   scrollbar-width: thin;
   scrollbar-color: var(--azulmedio) #fff;
@@ -34,15 +39,14 @@
   color: #fff;
 }
 
-.cor-link-navegacao {
-  color: var(--azulescuro);
+.cor-link {
+  color: var(--azulclaro);
   transition: .3s;
 }
 
-.cor-link-navegacao:hover {
-  color: var(--azulagua);
+.cor-link:hover {
+  color: var(--azulescuro);
 }
-
 
 /* HOME */
 
@@ -72,3 +76,16 @@
 /* LOGIN */
 
 /* RECUPERACAO SENHA */
+
+
+@media only screen and (min-width: 992px) {
+  .espaco-link {
+    margin-left: 1.6rem !important;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .espaco-link {
+    margin-left: 3rem !important;
+  }
+}
