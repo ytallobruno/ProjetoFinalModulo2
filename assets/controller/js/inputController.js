@@ -37,8 +37,8 @@ campoSenhaRepeat.on('input', () => {
     const senhaRepeat = campoSenhaRepeat.val();
     const senha = $('#senha').val();
     gerenciadorSenha = new GerenciadorDeSenha();
-    confirmadorSenha = gerenciadorSenha.confirma(senha,senhaRepeat);
-    const controlaSenha= new ControladorInput(senhaRepeat, campoSenhaRepeat, confirmadorSenha);
+    confirmadorSenha = gerenciadorSenha.confirma(senha, senhaRepeat);
+    const controlaSenha = new ControladorInput(senhaRepeat, campoSenhaRepeat, confirmadorSenha);
     controlaSenha.marcaElemento();
 });
 
