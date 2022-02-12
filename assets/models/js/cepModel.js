@@ -30,8 +30,8 @@ class GerenciadorDeCep {
                 success: (result) => {
                     this.dadosApi = {...result};
                 },
-                error: function () {
-                    throw new Error ('CEP não encontrado');
+                error: function (erro) {
+                    throw new Error (erro);
                 }
             });
         } catch (error) {
