@@ -6,15 +6,16 @@ body {
 }
 
 :root {
-  --azulescuro: #0b132b;
-  --azulmedio: #1c2541;
-  --azulclaro: #3a506b;
-  --azulagua: #5bc0be;
+  --escuro: #0b132b;
+  --medio: #1c2541;
+  --claro: #3a506b;
+  --agua: #5b8fc0;
+  --cinza: #c9c9c9;
 }
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--azulmedio) #fff;
+  scrollbar-color: var(--medio) #fff;
   scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
@@ -24,29 +25,74 @@ body {
   background: #fff;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--azulmedio);
+  background-color: var(--medio);
   border-radius: 10px;
   border: 3px solid #fff;
 }
 
+.estilo-barra-navegacao {
+  background-color: var(--escuro);
+}
+
+.logo-barranav {
+  width: 2rem;
+  height: auto;
+}
+
+.texto-barra-navegacao {
+  font-weight: bold;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.texto-barra-navegacao:hover {
+  color: var(--cinza);
+}
+
+.estilo-link-barranav {
+  color: #fff;
+  transition: .3s;
+  position: relative;
+}
+
+.estilo-link-barranav:hover {
+  color: #fff;
+}
+
+.estilo-link-barranav::after {
+  content:"";
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.estilo-link-barranav:hover::after {
+  width: 40%;
+}
+
 .botao-cor-especial {
-  background-color: var(--azulmedio);
+  background-color: var(--medio);
   color: #fff;
   transition: 0.3s;
 }
 
 .botao-cor-especial:hover {
-  background-color: var(--azulclaro);
+  background-color: var(--claro);
   color: #fff;
 }
 
+
 .cor-link {
-  color: var(--azulclaro);
+  color: var(--claro);
   transition: 0.3s;
 }
 
 .cor-link:hover {
-  color: var(--azulescuro);
+  color: var(--escuro);
 }
 
 .espaco-label {
