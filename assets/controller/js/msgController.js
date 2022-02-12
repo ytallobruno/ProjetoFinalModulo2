@@ -13,6 +13,11 @@ class ControladorDeAlertas{
             this.mudaDom.removeAtributo(this.alertaErro,this.atributo);
         }
     }
+
+    removeMensagem(){
+        this.mudaDom.colocaAtributo(this.alertaSucesso,this.atributo);
+        this.mudaDom.colocaAtributo(this.alertaErro,this.atributo);
+    }
 }
 
 const gerenciaEmail = new GerenciadorDeEmail();

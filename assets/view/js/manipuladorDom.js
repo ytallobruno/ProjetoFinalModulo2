@@ -8,4 +8,12 @@ class ManipuladorDom{
     colocaClasse(elemento,classe){
         elemento.addClass(classe);
     }
+
+    removeAtributo(elemento, atributo){
+        elemento.removeAttr(atributo)
+    }
+
+    colocaAtributo(elemento, atributo){
+        elemento.attr(atributo)
+    }
 }
