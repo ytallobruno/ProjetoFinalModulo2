@@ -8,7 +8,6 @@ class ControladorInput {
     }
 
     marcaElemento() {
-        console.log(this.confirmadorCampo)
         if (this.confirmadorCampo) {
             this.inputView.mudaClasse(this.campoInput, 'border-success', 'border-danger')
 
@@ -23,12 +22,23 @@ class ControladorInput {
 
 
 const campoEmail = $('#email');
+const campoSenhaRepeat = $('#senhaRepeat');
 
 campoEmail.on('input', () => {
-    const inputEmail = $('#email').val();
+    const email = campoEmail.val();
     gerenciadorEmail = new GerenciadorDeEmail();
-    confirmadorCampoEmail = gerenciadorEmail.validaEmail(inputEmail);
-    const controlaEmail = new ControladorInput(inputEmail, campoEmail, confirmadorCampoEmail);
+    confirmadorEmail = gerenciadorEmail.validaEmail(email);
+    const controlaEmail = new ControladorInput(email, campoEmail, confirmadorEmail);
     controlaEmail.marcaElemento();
+});
+
+
+campoSenhaRepeat.on('input', () => {
+    const senhaRepeat = campoSenhaRepeat.val();
+    const senha = $('#senha').val();
+    gerenciadorSenha = new GerenciadorDeSenha();
+    confirmadorSenha = gerenciadorSenha.confirma(senha,senhaRepeat);
+    const controlaSenha= new ControladorInput(senhaRepeat, campoSenhaRepeat, confirmadorSenha);
+    controlaSenha.marcaElemento();
 });
 
