@@ -1,31 +1,32 @@
-class ControladorDeAlertas{
-    constructor(){
+class ControladorDeAlertas {
+    constructor() {
         this.alertaSucesso = $('#msg-sucesso');
         this.alertaErro = $('#msg-erro');
-        this.atributo = "hidden";
+        this.btn = $('#btn-submit');
+        this.atributoAparece = "hidden";
         this.mudaDom = new ManipuladorDom();
     }
 
-    mostraMensagem(confirmador){
-        if(confirmador){
-            this.mudaDom.removeAtributo(this.alertaSucesso,this.atributo);
-        } else{
-            this.mudaDom.removeAtributo(this.alertaErro,this.atributo);
+    mostraMensagem(confirmador) {
+        if (confirmador) {
+            this.mudaDom.colocaAtributo(this.alertaErro, this.atributoAparece);
+            this.mudaDom.removeAtributo(this.alertaSucesso, this.atributoAparece);
+        } else {
+            this.mudaDom.colocaAtributo(this.alertaSucesso, this.atributoAparece);
+            this.mudaDom.removeAtributo(this.alertaErro, this.atributoAparece);
         }
-    }
-
-    removeMensagem(){
-        this.mudaDom.colocaAtributo(this.alertaSucesso,this.atributo);
-        this.mudaDom.colocaAtributo(this.alertaErro,this.atributo);
     }
 }
 
+
 const gerenciaEmail = new GerenciadorDeEmail();
+const controlaAlerta = new ControladorDeAlertas();
 
 
-$("#btn-submit").on('click', (event)=>{
+$("#btn-submit").on('click', (event) => {
     event.preventDefault();
-    const confirmadorEmail = gerenciaEmail.validaEmail($("#email").val())
-    const controlaAlerta = new ControladorDeAlertas();
+    const email= $('#email').val();
+    const confirmadorEmail = gerenciaEmail.validaEmail(email);
     controlaAlerta.mostraMensagem(confirmadorEmail);
 })
+
