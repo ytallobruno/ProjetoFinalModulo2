@@ -1,14 +1,15 @@
 /* GERAL */
+html,
+body {
+  width: 100%;
+  height: calc(100% - 50px);
+}
+
 :root {
   --azulescuro: #0b132b;
   --azulmedio: #1c2541;
   --azulclaro: #3a506b;
   --azulagua: #5bc0be;
-}
-
-body {
-  width: 100%;
-  height: calc(100% - 40px);
 }
 
 * {
@@ -31,23 +32,26 @@ body {
 .botao-cor-especial {
   background-color: var(--azulmedio);
   color: #fff;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.botao-cor-especial:hover{
+.botao-cor-especial:hover {
   background-color: var(--azulclaro);
   color: #fff;
 }
 
 .cor-link {
   color: var(--azulclaro);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .cor-link:hover {
   color: var(--azulescuro);
 }
 
+.espaco-label {
+  margin: 0.5rem 0;
+}
 /* HOME */
 
 /* SERVICOS */
@@ -56,7 +60,7 @@ body {
   font-weight: bold;
   text-decoration: underline;
 }
-  .fonte-texto {
+.fonte-texto {
   font-size: 1.5rem;
 }
 
@@ -70,13 +74,10 @@ body {
 }
 
 /* CADASTRO */
-
+.largura-input-cadastro {
+  width: 50%;
+}
 /* CONTATO */
-
-/* LOGIN */
-
-/* RECUPERACAO SENHA */
-
 
 @media only screen and (min-width: 992px) {
   .espaco-link {
