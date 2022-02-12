@@ -1,0 +1,28 @@
+/* GERAL */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #1c2541 #fff;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #1c2541;
+  border-radius: 10px;
+  border: 3px solid #fff;
+}
+
+/* PRODUTOS */
+.card-largura {
+  max-width: 25rem;
+}
+
+.card-posicao-imagem {
+  /* object-fit: cover; */
+  height: 15rem;
+  height: 15rem;
+}
