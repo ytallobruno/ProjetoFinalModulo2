@@ -15,16 +15,12 @@
     <title>BattleFRONT - Produtos</title>
   </head>
   <body>
-
     <header>
       <nav
-        class="navbar navbar-expand-lg fixed-top pt-1 estilo-barra-navegacao"
+        class="navbar navbar-expand-lg navbar-dark fixed-top pt-1 estilo-barra-navegacao"
       >
-        <section class="container-fluid">
-          <a
-            class="navbar-brand texto-barra-navegacao"
-            href="../../../index.html"
-          >
+        <section class="container-fluid ms-3">
+          <a class="navbar-brand texto-barra-navegacao" href="../../../index.html">
             <img
               class="logo-barranav"
               src="../img/img_logo.png"
@@ -83,102 +79,148 @@
     </header>
 
     <main>
-      <section class="principal mt-5 pt-4 text-center">
-        <h2
-          class="fonte-titulo"
-        >
-          Conheça nossos planos:
-        </h2>
-        <p class="fonte-texto">
+      <section class="container mt-5 pt-4 d-flex flex-column">
+        <h2 class="secao-fonte-titulo mx-auto">Conheça nossos planos:</h2>
+        <p class="secao-fonte-texto">
           Para utilizar a plataforma é necessário selecionar um dos planos
           abaixo e realizar o cadastro. Somente assim podemos personalizar o seu
           plano de criação.
         </p>
-        <p class="fonte-texto">
+        <p class="secao-fonte-texto">
           Contamos com uma excelente interface, desenvolvida especialmente para
           o dev que está começando agora.
         </p>
-        <p class="fonte-texto">Como?</p>
-        <p class="fonte-texto">
+        <h3 class="mx-auto">Como?</h3>
+        <p class="secao-fonte-texto">
           O nosso modelo de estudos identifica os erros semânticos e modifica
-          sua cor, a fim de que você possa analisar.
-        </p>
-        <p class="fonte-texto">
+          sua cor, a fim de que você possa ter uma visão melhor de onde estão os erros.<br>
           Junto a isso, o próprio sistema fornece sugestões se você estiver com
           dificuldades em seguir as instruções do exercício.
         </p>
       </section>
 
-      <section class="container product-cards d-flex justify-content-center">
-        <div class="container row w-100 justify-content-center">
-          <article class="col-12 col-xl-4 col-lg-6 col-md-8">
-            <div
-              class="card p-2 card-externo"
-            >
-              <img
-                src="../img/appDevelopment.png"
-                class="card-img-top card-posicao-imagem"
-                alt="App Development"
-              />
-              <div class="card p-1 card-interno">
-                <h4 class="card-title text-center">Gratuito</h4>
-                <p class="card-text text-center">
-                  Desafios de Flexbox + Landing pages em HTML e CSS puros
-                </p>
-                <p class="card-text text-center">
-                  O que irá receber além disso:<br> 3 projetos + 2 e-books.
-                </p>
-                <a href="#" class="btn botao-cor-especial">Escolher</a>
+      <section class="container d-flex justify-content-center">
+        <div class="row d-flex justify-content-center mb-5">
+
+          <article class="d-flex justify-content-center col-12 col-xl-4 col-lg-6 col-md-10">
+            <div class="card-externo text-center mb-4">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Plano Gratuito</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title">R$0<small class="text-muted fw-light">/mês</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Desafios de flexbox</li>
+                  <li>Landing pages</li>
+                  <li>+ 3 projetos</li>
+                  <li>+ 2 e-books</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg botao-cor-gratis">Começar os estudos</button>
               </div>
             </div>
           </article>
-          <article class="col-12 col-xl-4 col-lg-6 col-md-8">
-            <div
-              class="card p-2 card-externo"
-            >
-              <img
-                src="../img/onlineEducation.png"
-                class="card-img-top card-posicao-imagem"
-                alt="Studying"
-              />
-              <div class="card p-1 card-interno">
-                <h4 class="card-title text-center">Intermediário</h4>
-                <p class="card-text text-center">
-                  Desafios de JavaScript + Lógica de Programação + CSS Animations
-                </p>
-                <p class="card-text text-center">
-                  O que irá receber além disso:<br> 5 projetos + 3 e-books.
-                </p>
-                <a href="#" class="btn botao-cor-especial">Escolher</a>
+
+          <article class="d-flex justify-content-center col-12 col-xl-4 col-lg-6 col-md-10">
+            <div class="card-externo text-center mb-4">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Plano Intermediário</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title">R$19,90<small class="text-muted fw-light">/mês</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Desafios básicos de Javascript</li>
+                  <li>Lógica de programação</li>
+                  <li>+ 5 projetos</li>
+                  <li>+ 3 e-books</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg botao-cor-especial">Escolher</button>
               </div>
             </div>
           </article>
-          <article class="col-12 col-xl-4 col-lg-6 col-md-8">
-            <div
-              class="card p-2 card-externo"
-            >
-              <img
-                src="../img/coding.png"
-                class="card-img-top card-posicao-imagem"
-                alt="Coding"
-              />
-              <div class="card p-1 card-interno">
-                <h4 class="card-title text-center">Premium</h4>
-                <p class="card-text text-center">
-                  Desafios avançados de JavaScript + JQuery + Integração de API's
-                </p>
-                <p class="card-text text-center">
-                  O que irá receber além disso:<br> 10 projetos + 5 e-books.
-                </p>
-                <a href="#" class="btn botao-cor-especial">Escolher</a>
+
+          <article class="d-flex justify-content-center col-12 col-xl-4 col-lg-6 col-md-10">
+            <div class="card-externo-variavel text-center mb-4">
+              <div class="card-header py-3 card-externo-cabecalho">
+                <h4 class="my-0 fw-normal">Plano Premium</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title">R$29,90<small class="text-muted fw-light">/mês</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Desafios avançados de Javascript</li>
+                  <li>JQuery + API's</li>
+                  <li>+ 10 projetos</li>
+                  <li>+ 5 e-books</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg botao-cor-especial">Escolher</button>
               </div>
             </div>
           </article>
         </div>
       </section>
+    
+        <section class="tabela-comparativo">
+          <h2 class=" text-center mb-4">Compare os planoss</h2>
+          <table class="table-responsive">
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Grátis</th>
+                  <th>Intermediário</th>
+                  <th>Premium</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-start">Flexbox</th>
+                  <td>&#10003;</td>
+                  <td>&#10003;</td>
+                  <td>&#10003;</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Landing Pages</th>
+                  <td>&#10003;</td>
+                  <td>&#10003;</td>
+                  <td>&#10003;</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Desafios básicos de Javascript</th>
+                  <td></td>
+                  <td>&#10003;</td>
+                  <td>&#10003;</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Lógica de Programação</th>
+                  <td></td>
+                  <td>&#10003;</td>
+                  <td>&#10003;</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">Desafios Avançados de Javascript</th>
+                  <td></td>
+                  <td></td>
+                  <td>&#10003;</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">JQuery</th>
+                  <td></td>
+                  <td></td>
+                  <td>&#10003;</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-start">API's</th>
+                  <td></td>
+                  <td></td>
+                  <td>&#10003;</td>
+                </tr>
+              </tbody>
+            </table>
+          </table>
+        </section>
+
     </main>
 
-    <footer class="bg-light p-1 text-center">
+    <footer class="position-relative bottom-0 bg-light p-3 text-center">
       <p class="m-0"><a> BattleFRONT &#169; - 2022 - all rights reserved</a></p>
     </footer>
     <script
