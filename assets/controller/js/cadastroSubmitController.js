@@ -1,10 +1,10 @@
-class CadastroSubmit {
+class CadastroSubmit extends ControladorDeAlertas{
 
     constructor() {
+        super();
         this.gerenciadorSenha = new GerenciadorDeSenha();
         this.gerenciaEmail = new GerenciadorDeEmail();
         this.gerenciaCep = new GerenciadorDeCep($('#cep').val());
-        this.controlaAlerta = new ControladorDeAlertas();
     }
 
     verificaConfirmacaoSenha(){
@@ -29,7 +29,7 @@ class CadastroSubmit {
         const checkSenha = this.verificaConfirmacaoSenha();
         const checkEmail = this.verificaConfirmacaoEmail();
         const checkCep = this.verificaConfirmacaoCep();
-        this.controlaAlerta.mostraMensagem(checkSenha && checkEmail && checkCep)
+        this.mostraMensagem(checkSenha && checkEmail && checkCep)
     }
 }
 
