@@ -14,6 +14,6 @@ class ManipuladorDom{
     }
 
     colocaAtributo(elemento, atributo){
-        elemento.attr(atributo)
+        elemento.prop(atributo, true)
     }
 }
