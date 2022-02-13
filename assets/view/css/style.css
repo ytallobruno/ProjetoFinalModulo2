@@ -1,4 +1,6 @@
 /* GERAL */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Exo:wght@300;400;500&display=swap");
+
 html,
 body {
   width: 100%;
@@ -17,6 +19,7 @@ body {
   scrollbar-width: thin;
   scrollbar-color: var(--medio) #fff;
   scroll-behavior: smooth;
+  font-family: "Exo", sans-serif;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -40,27 +43,18 @@ body {
 }
 
 .texto-barra-navegacao {
-  font-weight: bold;
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: 400;
   color: #fff;
   transition: 0.3s;
 }
 
-.texto-barra-navegacao:hover {
-  color: var(--cinza);
-}
-
 .estilo-link-barranav {
-  color: #fff;
-  transition: .3s;
   position: relative;
 }
 
-.estilo-link-barranav:hover {
-  color: #fff;
-}
-
 .estilo-link-barranav::after {
-  content:"";
+  content: "";
   width: 0%;
   height: 2px;
   background-color: #fff;
@@ -85,20 +79,74 @@ body {
   color: #fff;
 }
 
-
 .cor-link {
   color: var(--claro);
   transition: 0.3s;
 }
 
 .cor-link:hover {
-  color: var(--escuro);
+  color: var(--agua);
 }
 
 .espaco-label {
   margin: 0.5rem 0;
 }
+
+.card-posicao-imagem {
+  object-fit: contain;
+  height: 140px;
+  padding: 0.5rem;
+}
+
 /* HOME */
+.artigo-chamada-principal {
+  margin: 2rem 2rem 3rem 2rem;
+  padding: 2.5rem;
+  height: calc(100vh - 250px);
+}
+
+.artigo-titulo-principal {
+  font-size: 2.8rem;
+}
+
+.artigo-titulo-nome {
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: 700;
+}
+
+.artigo-img-principal {
+  width: 35rem;
+}
+
+.artigo-img-descricao {
+  width: 25rem;
+}
+
+.artigo-descricao-principal {
+  margin: 4rem 0;
+  padding: 2rem;
+  align-items: center;
+}
+
+.artigo-texto-descricao {
+  font-size: 1.5rem;
+  padding-right: 3rem;
+}
+
+.artigo-cartao {
+  height: 25rem;
+  width: 25rem;
+  margin: 1rem;
+}
+
+.artigo-cartao-interno {
+  height: 2rem;
+}
+
+.acordeao-tamanho {
+  width: 60%;
+  margin: 0 auto 1rem auto;
+}
 
 /* SERVICOS */
 .fonte-titulo {
@@ -117,17 +165,12 @@ body {
   max-width: 25rem;
   border-radius: 10px;
   border: 4px solid #dee2e6;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .card-interno {
   /* height: 15rem; */
   min-width: 15rem;
-}
-
-.card-posicao-imagem {
-  object-fit: contain;
-  height: 150px;
 }
 
 /* CADASTRO */
@@ -145,5 +188,67 @@ body {
 @media only screen and (min-width: 1400px) {
   .espaco-link {
     margin-left: 3rem !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .artigo-chamada-principal,
+  .artigo-descricao-principal {
+    margin: 0.3rem;
+    padding: 0.8rem;
+    height: 100%;
+  }
+  
+  .artigo-titulo-principal {
+    font-size: 1.2rem;
+  }
+
+  .artigo-img-principal {
+    display: none;
+  }
+
+  .artigo-descricao-principal {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+
+  .artigo-texto-descricao {
+    font-size: 1rem;
+    padding-right: 0rem;
+  }
+
+}
+
+@media only screen and (max-width: 960px) {
+  .artigo-chamada-principal,
+  .artigo-descricao-principal {
+    margin: 1rem;
+    padding: 0.8rem;
+    height: 100%;
+  }
+  
+  .artigo-titulo-principal {
+    font-size: 1.7rem;
+  }
+
+  .artigo-img-principal {
+    max-width: 15rem;
+  }
+
+  .artigo-img-descricao {
+    width: 20rem;
+  }
+
+  .artigo-descricao-principal {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+
+  .artigo-texto-descricao {
+    font-size: 1.3rem;
+    padding-right: 0rem;
+  }
+  .acordeao-tamanho {
+    width: 90%;
   }
 }
