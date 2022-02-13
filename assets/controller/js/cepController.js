@@ -33,10 +33,15 @@ class ControladorCep {
 
 
 const btnCep = $('#btn-cep');
+const campoCep = $('#cep');
+
+campoCep.on('input', () => {
+    const controlaCep = new ControladorCep(campoCep.val());
+    controlaCep.marcaElemento();
+});
 
 btnCep.on('click', (event) => {
     event.preventDefault();
-    const controlaCep = new ControladorCep($('#cep').val());
+    const controlaCep = new ControladorCep(campoCep.val());
     controlaCep.chamaApiCep();
-    controlaCep.marcaElemento();
 });
