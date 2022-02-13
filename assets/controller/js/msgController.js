@@ -25,7 +25,7 @@ const controlaAlerta = new ControladorDeAlertas();
 
 $("#btn-submit").on('click', (event) => {
     event.preventDefault();
-    const email= $('#email').val();
+    const email = $('#email').val();
     const confirmadorEmail = gerenciaEmail.validaEmail(email);
     controlaAlerta.mostraMensagem(confirmadorEmail);
 })

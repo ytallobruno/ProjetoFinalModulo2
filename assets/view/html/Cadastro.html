@@ -86,10 +86,25 @@
         <label for="">Estado:</label><br />
         <input type="text" name="txtCidade" class="form-control" id="estado" size="2" maxlength="2" /><br />
 
-        <button type="submit" name="btnSubmitUsuario" class="btn btn-primary w-100 my-4" id="btn-cadastro">
+        
+        <div class="alert alert-success mt-1" id="msg-sucesso" role="alert" hidden>
+          <h4 class="alert-heading">Seu cadastro foi realizado com sucesso!</h4>
+          <hr>
+          <p>Você já está cadastrado na lista de espera e em breve será comunicado sobre a data de lançamento.</p>
+        </div>
+
+        <div class="alert alert-danger mt-1" id="msg-erro" role="alert" hidden>
+          <h4 class="alert-heading">Não foi possível realizar seu cadastro!</h4>
+          <hr>
+          <p>Por favor, confira seus dados e tente novamente.</p>
+        </div>
+
+        <button type="submit" name="btnSubmitUsuario" class="btn btn-primary w-100 my-4" id="btn-cadastro" >
           Cadastrar
-        </button><br><br><br><br>
-      </div>
+        </button>
+
+      </div> <br><br>
+
     </section>
   </main>
 
@@ -109,6 +124,8 @@
   <script src="../js/cepView.js"></script>
   <script src="../../controller/js/cepController.js"></script>
   <script src="../../controller/js/inputController.js"></script>
+  <script src="../../controller/js/msgController.js"></script>
+  <script src="../../controller/js/cadastroSubmitController.js"></script>
 
 </body>
 
