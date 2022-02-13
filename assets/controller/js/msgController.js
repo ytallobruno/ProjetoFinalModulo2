@@ -9,10 +9,10 @@ class ControladorDeAlertas {
 
     mostraMensagem(confirmador) {
         if (confirmador) {
-            this.mudaDom.colocaAtributo(this.alertaErro, this.atributoAparece);
+            this.mudaDom.colocaAtributo(this.alertaErro, this.atributoAparece, true);
             this.mudaDom.removeAtributo(this.alertaSucesso, this.atributoAparece);
         } else {
-            this.mudaDom.colocaAtributo(this.alertaSucesso, this.atributoAparece);
+            this.mudaDom.colocaAtributo(this.alertaSucesso, this.atributoAparece, true);
             this.mudaDom.removeAtributo(this.alertaErro, this.atributoAparece);
         }
     }

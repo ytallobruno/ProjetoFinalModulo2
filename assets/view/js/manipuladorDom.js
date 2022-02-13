@@ -9,7 +9,7 @@ class ManipuladorDom{
         elemento.removeAttr(atributo)
     }
 
-    colocaAtributo(elemento, atributo){
-        elemento.prop(atributo, true)
+    colocaAtributo(elemento, atributo, valorAtributo){
+        elemento.attr(atributo, valorAtributo)
     }
 }
