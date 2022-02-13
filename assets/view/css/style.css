@@ -12,7 +12,16 @@ body {
   --medio: #1c2541;
   --claro: #3a506b;
   --agua: #5b8fc0;
-  --cinza: #c9c9c9;
+  --cinza: #e4e4e4;
+}
+
+input {
+  caret-color: var(--agua);
+}
+
+::selection {
+  background-color: var(--agua);
+  color: #fff;
 }
 
 * {
@@ -149,28 +158,52 @@ body {
 }
 
 /* SERVICOS */
-.fonte-titulo {
+.secao-fonte-titulo {
   font-size: 2rem;
   font-weight: bold;
   text-decoration: underline;
 }
-.fonte-texto {
-  font-size: 1.5rem;
+.secao-fonte-texto {
+  font-size: 1rem;
+}
+
+.card-externo, .card-externo-variavel {
+  margin: 0.5rem;
+  height: 21rem;
+  min-width: 20rem;
+  max-width: 20rem;
+  border-radius: .25rem;
+  box-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 0.2);
 }
 
 .card-externo {
-  margin: 1rem;
-  height: 25rem;
-  min-width: 20rem;
-  max-width: 25rem;
-  border-radius: 10px;
-  border: 4px solid #dee2e6;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--cinza);
 }
 
-.card-interno {
-  /* height: 15rem; */
-  min-width: 15rem;
+.card-externo-variavel {
+  border: 1px solid var(--agua);
+}
+
+.card-externo-cabecalho {
+  color: #fff;
+  background-color: var(--medio);
+}
+
+.tabela-comparativo {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.botao-cor-gratis {
+  background-color: #fff;
+  color: var(--escuro);
+  border: 1px solid var(--escuro);
+  transition: 0.3s;
+}
+
+.botao-cor-gratis:hover {
+  background-color: var(--escuro);
+  color: #fff;
 }
 
 /* CADASTRO */
@@ -198,7 +231,7 @@ body {
     padding: 0.8rem;
     height: 100%;
   }
-  
+
   .artigo-titulo-principal {
     font-size: 1.2rem;
   }
@@ -216,7 +249,9 @@ body {
     font-size: 1rem;
     padding-right: 0rem;
   }
-
+  .tabela-comparativo {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -226,7 +261,7 @@ body {
     padding: 0.8rem;
     height: 100%;
   }
-  
+
   .artigo-titulo-principal {
     font-size: 1.7rem;
   }
@@ -251,4 +286,8 @@ body {
   .acordeao-tamanho {
     width: 90%;
   }
+  .tabela-comparativo {
+    width: 90%;
+  }
+
 }
