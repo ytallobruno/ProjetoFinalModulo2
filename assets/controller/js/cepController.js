@@ -1,5 +1,5 @@
 class ControladorCep {
-    constructor(cep) {    
+    constructor(cep) {
         this.campoCep = $('#cep');
         this.cepView = new VisualizadorCep(this.cep);
         this.cep = cep;
@@ -7,24 +7,25 @@ class ControladorCep {
     }
 
     chamaApiCep() {
-        this.gerenciaCep.apiCep();
-        setTimeout(() => {
-            this.dadosApi = this.gerenciaCep.getDadosApi();
-            this.completaEnderecoForm();
-        },1000);
-        
-    }
-
-    marcaElemento(){
-        if(this.gerenciaCep.getCepValidado()){
-            this.cepView.mudaClasse(this.campoCep,'border-success','border-danger')
-
-        } else{
-            this.cepView.mudaClasse(this.campoCep,'border-danger','border-success')
+        if (this.gerenciaCep.getCepValidado()) {
+            this.gerenciaCep.apiCep();
+            setTimeout(() => {
+                this.dadosApi = this.gerenciaCep.getDadosApi();
+                this.completaEnderecoForm();
+            }, 1000);
         }
     }
 
-    completaEnderecoForm(){
+    marcaElemento() {
+        if (this.gerenciaCep.getCepValidado()) {
+            this.cepView.mudaClasse(this.campoCep, 'border-success', 'border-danger')
+
+        } else {
+            this.cepView.mudaClasse(this.campoCep, 'border-danger', 'border-success')
+        }
+    }
+
+    completaEnderecoForm() {
         this.cepView.renderizaCep(this.dadosApi);
     }
 
