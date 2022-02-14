@@ -159,20 +159,25 @@ input {
 
 /* SERVICOS */
 .secao-fonte-titulo {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   text-decoration: underline;
-}
-.secao-fonte-texto {
-  font-size: 1rem;
+  margin: 1rem auto;
 }
 
-.card-externo, .card-externo-variavel {
+.secao-fonte-texto {
+  font-size: 1rem;
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.card-externo,
+.card-externo-variavel {
   margin: 0.5rem;
   height: 21rem;
   min-width: 20rem;
-  max-width: 20rem;
-  border-radius: .25rem;
+  max-width: 15rem;
+  border-radius: 0.25rem;
   box-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 0.2);
 }
 
@@ -224,7 +229,58 @@ input {
   }
 }
 
+@media only screen and (max-width: 300px) {
+  .artigo-chamada-principal,
+  .artigo-descricao-principal {
+    margin: 0.3rem;
+    padding: 0.8rem;
+    height: 100%;
+  }
+
+  .card-posicao-imagem {
+    object-fit: contain;
+    height: 100px;
+    padding: 0.25rem;
+  }
+
+  .artigo-cartao {
+    height: 30rem;
+    width: 25rem;
+    margin: 0.5rem;
+  }
+  .card-externo,
+  .card-externo-variavel {
+    height: 21rem;
+    min-width: 15rem;
+  }
+
+  .tabela-comparativo {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  .secao-fonte-titulo {
+    margin: 1rem 0 1rem 0;
+  }
+
+  .secao-fonte-texto {
+    font-size: 0.8rem;
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .card-externo,
+  .card-externo-variavel {
+    margin: 0.25rem;
+    min-width: 15rem;
+  }
+}
+
 @media only screen and (max-width: 450px) {
+  .texto-barra-navegacao {
+    font-size: 1rem;
+  }
+
   .artigo-chamada-principal,
   .artigo-descricao-principal {
     margin: 0.3rem;
@@ -249,8 +305,29 @@ input {
     font-size: 1rem;
     padding-right: 0rem;
   }
+
   .tabela-comparativo {
-    width: 80%;
+    width: 50%;
+  }
+  .tabela-texto-servico {
+    font-size: 0.8rem;
+  }
+
+  .secao-fonte-titulo {
+    font-size: 1.1rem;
+    margin: 1rem 0 0rem 0;
+  }
+
+  .secao-fonte-texto {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  .card-externo,
+  .card-externo-variavel {
+    margin: 0.25rem;
+    height: 21rem;
+    min-width: 15rem;
   }
 }
 
@@ -286,8 +363,17 @@ input {
   .acordeao-tamanho {
     width: 90%;
   }
+  .secao-fonte-titulo {
+    font-size: 2rem;
+  }
+
+  .secao-fonte-texto {
+    font-size: 1.2rem;
+    width: 100%;
+    /* margin: 1rem auto; */
+  }
+
   .tabela-comparativo {
     width: 90%;
   }
-
 }

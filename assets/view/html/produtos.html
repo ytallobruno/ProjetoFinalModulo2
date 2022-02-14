@@ -47,6 +47,14 @@
               <li class="nav-item">
                 <a
                   class="nav-link active d-flex justify-content-end estilo-link-barranav"
+                  href="../../../index.html"
+                  >Home</a
+                >
+              </li>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active d-flex justify-content-end estilo-link-barranav"
                   href="./produtos.html"
                   >Serviços</a
                 >
@@ -79,23 +87,16 @@
     </header>
 
     <main>
-      <section class="container mt-5 pt-4 d-flex flex-column">
-        <h2 class="secao-fonte-titulo mx-auto">Conheça nossos planos:</h2>
-        <p class="secao-fonte-texto">
-          Para utilizar a plataforma é necessário selecionar um dos planos
-          abaixo e realizar o cadastro. Somente assim podemos personalizar o seu
-          plano de criação.
-        </p>
+      <section class="container mt-3 pt-5 d-flex flex-column mb-2">
+        <h2 class="secao-fonte-titulo">Nosso modelo</h3>
         <p class="secao-fonte-texto">
           Contamos com uma excelente interface, desenvolvida especialmente para
-          o dev que está começando agora.
-        </p>
-        <h3 class="mx-auto">Como?</h3>
-        <p class="secao-fonte-texto">
-          O nosso modelo de estudos identifica os erros semânticos e modifica
-          sua cor, a fim de que você possa ter uma visão melhor de onde estão os erros.<br>
+          o dev que está <strong>começando</strong> seus estudos neste momento.<br>
+          O nosso modelo de estudos identifica os erros semânticos e modifica sua cor, a fim de que você possa ter uma <strong>percepção melhor</strong> de onde eles estão.<br>
           Junto a isso, o próprio sistema fornece sugestões se você estiver com
-          dificuldades em seguir as instruções do exercício.
+          dificuldades em seguir as instruções do exercício.<br><br>
+          Para começar a utilizar a plataforma é necessário selecionar um dos planos
+          abaixo e realizar o cadastro:
         </p>
       </section>
 
@@ -108,14 +109,14 @@
                 <h4 class="my-0 fw-normal">Plano Gratuito</h4>
               </div>
               <div class="card-body">
-                <h1 class="card-title">R$0<small class="text-muted fw-light">/mês</small></h1>
+                <h2 class="card-title">R$0<small class="text-muted fw-light">/mês</small></h2>
                 <ul class="list-unstyled mt-3 mb-4">
                   <li>Desafios de flexbox</li>
                   <li>Landing pages</li>
                   <li>+ 3 projetos</li>
                   <li>+ 2 e-books</li>
                 </ul>
-                <button type="button" class="w-100 btn btn-lg botao-cor-gratis">Começar os estudos</button>
+                <a href="./Cadastro.html" type="button" class="w-100 btn btn-lg botao-cor-gratis">Começar os estudos</a>
               </div>
             </div>
           </article>
@@ -123,17 +124,17 @@
           <article class="d-flex justify-content-center col-12 col-xl-4 col-lg-6 col-md-10">
             <div class="card-externo text-center mb-4">
               <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">Plano Intermediário</h4>
+                <h4 class="my-0 fw-normal">Plano Plus</h4>
               </div>
               <div class="card-body">
-                <h1 class="card-title">R$19,90<small class="text-muted fw-light">/mês</small></h1>
+                <h2 class="card-title">R$19,90<small class="text-muted fw-light">/mês</small></h2>
                 <ul class="list-unstyled mt-3 mb-4">
                   <li>Desafios básicos de Javascript</li>
                   <li>Lógica de programação</li>
                   <li>+ 5 projetos</li>
                   <li>+ 3 e-books</li>
                 </ul>
-                <button type="button" class="w-100 btn btn-lg botao-cor-especial">Escolher</button>
+                <a href="./Cadastro.html" type="button" class="w-100 btn btn-lg botao-cor-especial">Escolher</a>
               </div>
             </div>
           </article>
@@ -144,14 +145,14 @@
                 <h4 class="my-0 fw-normal">Plano Premium</h4>
               </div>
               <div class="card-body">
-                <h1 class="card-title">R$29,90<small class="text-muted fw-light">/mês</small></h1>
+                <h2 class="card-title">R$29,90<small class="text-muted fw-light">/mês</small></h2>
                 <ul class="list-unstyled mt-3 mb-4">
                   <li>Desafios avançados de Javascript</li>
                   <li>JQuery + API's</li>
                   <li>+ 10 projetos</li>
                   <li>+ 5 e-books</li>
                 </ul>
-                <button type="button" class="w-100 btn btn-lg botao-cor-especial">Escolher</button>
+                <a href="./Cadastro.html" type="button" class="w-100 btn btn-lg botao-cor-especial">Escolher</a>
               </div>
             </div>
           </article>
@@ -159,56 +160,56 @@
       </section>
     
         <section class="tabela-comparativo">
-          <h2 class=" text-center mb-4">Compare os planoss</h2>
+          <h2 class=" text-center mb-4">Compare os planos</h2>
           <table class="table-responsive">
             <table class="table text-center">
               <thead>
                 <tr>
                   <th></th>
-                  <th>Grátis</th>
-                  <th>Intermediário</th>
-                  <th>Premium</th>
+                  <th class="tabela-texto-servico">Grátis</th>
+                  <th class="tabela-texto-servico">Plus</th>
+                  <th class="tabela-texto-servico">Premium</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th scope="row" class="text-start">Flexbox</th>
+                  <th scope="row" class="text-start tabela-texto-servico">Flexbox</th>
                   <td>&#10003;</td>
                   <td>&#10003;</td>
                   <td>&#10003;</td>
                 </tr>
                 <tr>
-                  <th scope="row" class="text-start">Landing Pages</th>
+                  <th scope="row" class="text-start tabela-texto-servico">Landing Pages</th>
                   <td>&#10003;</td>
                   <td>&#10003;</td>
                   <td>&#10003;</td>
                 </tr>
                 <tr>
-                  <th scope="row" class="text-start">Desafios básicos de Javascript</th>
+                  <th scope="row" class="text-start tabela-texto-servico">Desafios básicos de Javascript</th>
                   <td></td>
                   <td>&#10003;</td>
                   <td>&#10003;</td>
                 </tr>
                 <tr>
-                  <th scope="row" class="text-start">Lógica de Programação</th>
+                  <th scope="row" class="text-start tabela-texto-servico">Lógica de Programação</th>
                   <td></td>
                   <td>&#10003;</td>
                   <td>&#10003;</td>
                 </tr>
                 <tr>
-                  <th scope="row" class="text-start">Desafios Avançados de Javascript</th>
+                  <th scope="row" class="text-start tabela-texto-servico">Desafios Avançados de Javascript</th>
                   <td></td>
                   <td></td>
                   <td>&#10003;</td>
                 </tr>
                 <tr>
-                  <th scope="row" class="text-start">JQuery</th>
+                  <th scope="row" class="text-start tabela-texto-servico">JQuery</th>
                   <td></td>
                   <td></td>
                   <td>&#10003;</td>
                 </tr>
                 <tr>
-                  <th scope="row" class="text-start">API's</th>
+                  <th scope="row" class="text-start tabela-texto-servico">API's</th>
                   <td></td>
                   <td></td>
                   <td>&#10003;</td>
