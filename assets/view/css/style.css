@@ -176,7 +176,6 @@ input {
   margin: 0.5rem;
   height: 21rem;
   min-width: 20rem;
-  max-width: 15rem;
   border-radius: 0.25rem;
   box-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 0.2);
 }
@@ -215,7 +214,28 @@ input {
 .largura-input-cadastro {
   width: 50%;
 }
+
 /* CONTATO */
+.card-contato {
+  margin: 0.5rem;
+  height: 22.5rem;
+  min-width: 10rem;
+  max-width: 15rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 0.2);
+}
+
+.titulo-integrante {
+  margin: 5rem 0;
+  font-size: 2.4rem;
+}
+
+.nome-integrante {
+  margin: 0.5rem 0;
+  font-size: 1.0rem;
+  text-align: center;
+}
+
 
 @media only screen and (min-width: 992px) {
   .espaco-link {
@@ -274,6 +294,10 @@ input {
     margin: 0.25rem;
     min-width: 15rem;
   }
+
+  .titulo-integrante {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -329,6 +353,10 @@ input {
     height: 21rem;
     min-width: 15rem;
   }
+
+  .titulo-integrante {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 960px) {
@@ -370,10 +398,13 @@ input {
   .secao-fonte-texto {
     font-size: 1.2rem;
     width: 100%;
-    /* margin: 1rem auto; */
   }
 
   .tabela-comparativo {
     width: 90%;
+  }
+
+  .titulo-integrante {
+    margin: 0.5rem 0;
   }
 }
