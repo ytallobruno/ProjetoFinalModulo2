@@ -26,6 +26,7 @@ class GerenciadorDeCep {
             });
         } catch (error) {
             console.error(error.message);
+            alert('Ocorreu um erro, por favor, tente novamente')
         }
     }
 
