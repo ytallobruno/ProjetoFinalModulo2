@@ -1,12 +1,410 @@
+/* GERAL */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Exo:wght@300;400;500&display=swap");
 
-#fieldset {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 50%;
-    width: 70%;
-    background-color: rgba(0, 0, 0, 0.685);
-    border-radius: 5px;
+html,
+body {
+  width: 100%;
+  height: calc(100% - 50px);
+}
+
+:root {
+  --escuro: #0b132b;
+  --medio: #1c2541;
+  --claro: #3a506b;
+  --agua: #5b8fc0;
+  --cinza: #e4e4e4;
+}
+
+input {
+  caret-color: var(--agua);
+}
+
+::selection {
+  background-color: var(--agua);
+  color: #fff;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--medio) #fff;
+  scroll-behavior: smooth;
+  font-family: "Exo", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--medio);
+  border-radius: 10px;
+  border: 3px solid #fff;
+}
+
+.estilo-barra-navegacao {
+  background-color: var(--escuro);
+}
+
+.logo-barranav {
+  width: 2rem;
+  height: auto;
+}
+
+.texto-barra-navegacao {
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: 400;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.estilo-link-barranav {
+  position: relative;
+}
+
+.estilo-link-barranav::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.estilo-link-barranav:hover::after {
+  width: 40%;
+}
+
+.botao-cor-especial {
+  background-color: var(--medio);
+  color: #fff;
+  transition: 0.3s;
+}
+
+.botao-cor-especial:hover {
+  background-color: var(--claro);
+  color: #fff;
+}
+
+.cor-link {
+  color: var(--claro);
+  transition: 0.3s;
+}
+
+.cor-link:hover {
+  color: var(--agua);
+}
+
+.espaco-label {
+  margin: 0.5rem 0;
+}
+
+.card-posicao-imagem {
+  object-fit: contain;
+  height: 140px;
+  padding: 0.5rem;
+}
+
+/* HOME */
+.artigo-chamada-principal {
+  margin: 2rem 2rem 3rem 2rem;
+  padding: 2.5rem;
+  height: calc(100vh - 250px);
+}
+
+.artigo-titulo-principal {
+  font-size: 2.8rem;
+}
+
+.artigo-titulo-nome {
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: 700;
+}
+
+.artigo-img-principal {
+  width: 35rem;
+}
+
+.artigo-img-descricao {
+  width: 25rem;
+}
+
+.artigo-descricao-principal {
+  margin: 4rem 0;
+  padding: 2rem;
+  align-items: center;
+}
+
+.artigo-texto-descricao {
+  font-size: 1.5rem;
+  padding-right: 3rem;
+}
+
+.artigo-cartao {
+  height: 25rem;
+  width: 25rem;
+  margin: 1rem;
+}
+
+.artigo-cartao-interno {
+  height: 2rem;
+}
+
+.acordeao-tamanho {
+  width: 60%;
+  margin: 0 auto 1rem auto;
+}
+
+/* SERVICOS */
+.secao-fonte-titulo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 1rem auto;
+}
+
+.secao-fonte-texto {
+  font-size: 1.4rem;
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.card-externo,
+.card-externo-variavel {
+  margin: 0.5rem;
+  height: 21rem;
+  min-width: 20rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 0.2);
+}
+
+.card-externo {
+  border: 1px solid var(--cinza);
+}
+
+.card-externo-variavel {
+  border: 1px solid var(--agua);
+}
+
+.card-externo-cabecalho {
+  color: #fff;
+  background-color: var(--medio);
+}
+
+.tabela-comparativo {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.botao-cor-gratis {
+  background-color: #fff;
+  color: var(--escuro);
+  border: 1px solid var(--escuro);
+  transition: 0.3s;
+}
+
+.botao-cor-gratis:hover {
+  background-color: var(--escuro);
+  color: #fff;
+}
+
+/* CADASTRO */
+.largura-input-cadastro {
+  width: 50%;
+}
+
+/* CONTATO */
+.card-contato {
+  margin: 0.5rem;
+  height: 22.5rem;
+  min-width: 10rem;
+  max-width: 15rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 0.2);
+}
+
+.titulo-integrante {
+  margin: 5rem 0;
+  font-size: 2.4rem;
+}
+
+.nome-integrante {
+  margin: 0.5rem 0;
+  font-size: 1.0rem;
+  text-align: center;
+}
+
+
+@media only screen and (min-width: 992px) {
+  .espaco-link {
+    margin-left: 1.6rem !important;
   }
+}
+
+@media only screen and (min-width: 1400px) {
+  .espaco-link {
+    margin-left: 3rem !important;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .artigo-chamada-principal,
+  .artigo-descricao-principal {
+    margin: 0.3rem;
+    padding: 0.8rem;
+    height: 100%;
+  }
+
+  .card-posicao-imagem {
+    object-fit: contain;
+    height: 100px;
+    padding: 0.25rem;
+  }
+
+  .artigo-cartao {
+    height: 30rem;
+    width: 25rem;
+    margin: 0.5rem;
+  }
+  .card-externo,
+  .card-externo-variavel {
+    height: 21rem;
+    min-width: 15rem;
+  }
+
+  .tabela-comparativo {
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  .secao-fonte-titulo {
+    margin: 1rem 0 1rem 0;
+  }
+
+  .secao-fonte-texto {
+    font-size: 0.7rem;
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .card-externo,
+  .card-externo-variavel {
+    margin: 0.25rem;
+    min-width: 15rem;
+  }
+
+  .titulo-integrante {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .texto-barra-navegacao {
+    font-size: 1rem;
+  }
+
+  .artigo-chamada-principal,
+  .artigo-descricao-principal {
+    margin: 0.3rem;
+    padding: 0.8rem;
+    height: 100%;
+  }
+
+  .artigo-titulo-principal {
+    font-size: 1.2rem;
+  }
+
+  .artigo-img-principal {
+    display: none;
+  }
+
+  .artigo-descricao-principal {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+
+  .artigo-texto-descricao {
+    font-size: 1rem;
+    padding-right: 0rem;
+  }
+
+  .tabela-comparativo {
+    width: 50%;
+  }
+  .tabela-texto-servico {
+    font-size: 0.8rem;
+  }
+
+  .secao-fonte-titulo {
+    font-size: 1.1rem;
+    margin: 1rem 0 0rem 0;
+  }
+
+  .secao-fonte-texto {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  .card-externo,
+  .card-externo-variavel {
+    margin: 0.25rem;
+    height: 21rem;
+    min-width: 15rem;
+  }
+
+  .titulo-integrante {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .artigo-chamada-principal,
+  .artigo-descricao-principal {
+    margin: 1rem;
+    padding: 0.8rem;
+    height: 100%;
+  }
+
+  .artigo-titulo-principal {
+    font-size: 1.7rem;
+  }
+
+  .artigo-img-principal {
+    max-width: 15rem;
+  }
+
+  .artigo-img-descricao {
+    width: 20rem;
+  }
+
+  .artigo-descricao-principal {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+
+  .artigo-texto-descricao {
+    font-size: 1.3rem;
+    padding-right: 0rem;
+  }
+  .acordeao-tamanho {
+    width: 90%;
+  }
+  .secao-fonte-titulo {
+    font-size: 2rem;
+  }
+
+  .secao-fonte-texto {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+
+  .tabela-comparativo {
+    width: 90%;
+  }
+
+  .titulo-integrante {
+    margin: 0.5rem 0;
+  }
+}
