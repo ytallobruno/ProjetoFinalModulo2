@@ -163,6 +163,7 @@
             name="txtCEP"
             class="form-control"
             id="cep"
+            maxlength="8"
             placeholder="Digite somente números"
             required
           />
@@ -239,6 +240,19 @@
           required
         />
 
+          <div class="alert alert-success mt-1" id="msg-sucesso" role="alert" hidden>
+          <h4 class="alert-heading">Seu cadastro foi realizado com sucesso!</h4>
+          <hr>
+          <p>Você já está cadastrado na lista de espera e em breve será comunicado sobre a data de lançamento.</p>
+        </div>
+
+        <div class="alert alert-danger mt-1" id="msg-erro" role="alert" hidden>
+          <h4 class="alert-heading">Não foi possível realizar seu cadastro!</h4>
+          <hr>
+          <p>Por favor, confira seus dados e tente novamente.</p>
+        </div>
+        
+        
         <button
           type="submit"
           name="btnSubmitUsuario"
@@ -250,6 +264,7 @@
       </section>
     </main>
 
+
     <footer class="bg-light p-3 text-center">
       <p class="m-0"><a> BattleFRONT &#169; - 2022 - all rights reserved</a></p>
     </footer>
@@ -258,5 +273,17 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../../models/js/cepModel.js"></script>
+    <script src="../../models/js/emailModel.js"></script>
+    <script src="../../models/js/senhaModel.js"></script>
+    <script src="../js/manipuladorDom.js"></script>
+    <script src="../js/cepView.js"></script>
+    <script src="../../controller/js/cepController.js"></script>
+    <script src="../../controller/js/inputController.js"></script>
+    <script src="../../controller/js/msgController.js"></script>
+    <script src="../../controller/js/cadastroSubmitController.js"></script>
+
   </body>
 </html>
