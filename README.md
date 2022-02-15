@@ -17,7 +17,7 @@
   - A API ViaCEP deve ser utilizada para obter dados referentes aos CEPs utilizados no cadastro;
   - Utilizar repositório público no github, com todos os integrantes do grupo como colaboradoradores e disponibilização de uma GithubPage com o projeto;
 
-<img src="./image/" alt="imagem da tela do página do projeto">
+<img src="./assets/view/img/BattlefrontHome.png" alt="imagem da tela do página home do projeto">
 
 <h2 id="andamento">Andamento do projeto 📈</h2>
 
@@ -33,6 +33,7 @@
   - [x] API - ViaCEP
   - [x] Hoppscotch (para visualização do JSON)
   - [x] Git
+  - [x] Kanban
 
 <h2 id="habilidades">Habilidades Adquiridas 📝</h2>
 
@@ -50,13 +51,14 @@
   - Ajax (JQuery)
   - JSON
   - Uso da API ViaCEP
+  - Utilização de metodologias ágeis (Kanban)
 
 <hr>
 
 <h2 id="grupo">Autores 🥇</h2>
 
   - [Christopher Mamed](https://www.linkedin.com/in/christopher-mamed-407485139/)
-  - [Hadassa Moraes]()
+  - [Hadassa Moraes](https://www.linkedin.com/in/hadassa-moraes-5a6712230/)
   - [Vitor Del' Duca](https://www.linkedin.com/in/vitor-del-duca-gestao-programacao-treinamento/)
   - [Ytallo Bruno](https://https://linkedin.com/in/ytallobruno)
 
