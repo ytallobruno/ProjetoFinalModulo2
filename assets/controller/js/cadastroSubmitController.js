@@ -10,13 +10,13 @@ class CadastroSubmit extends ControladorDeAlertas{
     verificaConfirmacaoSenha(){
         const senha = $('#senha').val();
         const senhaRepeat = $('#senhaRepeat').val();
-        const confirmadorSenha = gerenciadorSenha.confirma(senha, senhaRepeat);
+        const confirmadorSenha = this.gerenciadorSenha.confirma(senha, senhaRepeat);
         return confirmadorSenha
     }
     
     verificaConfirmacaoEmail(){
         const email = $('#email').val();
-        const confirmadorEmail = gerenciaEmail.validaEmail(email);
+        const confirmadorEmail = this.gerenciaEmail.validaEmail(email);
         return confirmadorEmail
     }
 
@@ -29,7 +29,10 @@ class CadastroSubmit extends ControladorDeAlertas{
         const checkSenha = this.verificaConfirmacaoSenha();
         const checkEmail = this.verificaConfirmacaoEmail();
         const checkCep = this.verificaConfirmacaoCep();
-        this.mostraMensagem(checkSenha && checkEmail && checkCep)
+        const checkDados = this.verificaCadastro();
+        const confirmador = checkSenha && checkEmail && checkCep;
+        const verificador = checkDados.indexOf(false) == -1;
+        this.mostraMensagemIncompleta(verificador, confirmador);
     }
 }
 

@@ -5,9 +5,7 @@ class GerenciadorDeEmail{
       if (email.match(validacao)){
           this.email = email;
           return true;
-      } else{
-          return false;
-      }
+      } 
   }
 }
 

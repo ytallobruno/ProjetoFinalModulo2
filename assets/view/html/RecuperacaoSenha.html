@@ -111,7 +111,7 @@
           type="submit"
           name="btnSubmitUsuario"
           class="btn w-50 botao-cor-especial"
-          id="btn-submit"      
+          id="btn-recuperacaoSenha"      
         >
           Enviar
         </button>
@@ -131,6 +131,12 @@
           <hr>
           <p>Por favor, insira um email válido e tente novamente.</p>
         </div>
+        
+        <div class="alert alert-danger mt-4" id="msg-inputVazio" role="alert" hidden>
+          <h4 class="alert-heading">Seus dados estão incompletos!</h4>
+          <hr>
+          <p>Por favor, preencha os dados que faltam.</p>
+        </div>
       </section>
     </main>
 
@@ -146,7 +152,8 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="../../models/js/emailModel.js"></script>
     <script src="../../view/js/manipuladorDom.js"></script>
-    <script src="../../controller/js/inputController.js"></script>
+    <script src="../../controller/js/inputBorderController.js"></script>
+    <script src="../../controller/js/inputTamanhoController.js"></script>
     <script src="../../controller/js/msgController.js"></script>
   </body>
 </html>

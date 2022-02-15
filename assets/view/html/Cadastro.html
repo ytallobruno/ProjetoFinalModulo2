@@ -229,10 +229,10 @@
           required
         />
 
-        <label class="espaco-label" for="txtCidade">Estado:</label>
+        <label class="espaco-label" for="txtEstado">Estado:</label>
         <input
           type="text"
-          name="txtCidade"
+          name="txtEstado"
           class="form-control"
           id="estado"
           size="2"
@@ -240,7 +240,7 @@
           required
         />
 
-          <div class="alert alert-success mt-1" id="msg-sucesso" role="alert" hidden>
+          <div class="alert alert-success mt-2" id="msg-sucesso" role="alert" hidden>
           <h4 class="alert-heading">Seu cadastro foi realizado com sucesso!</h4>
           <hr>
           <p>Você já está cadastrado na lista de espera e em breve será comunicado sobre a data de lançamento.</p>
@@ -252,6 +252,11 @@
           <p>Por favor, confira seus dados e tente novamente.</p>
         </div>
         
+        <div class="alert alert-danger mt-4" id="msg-inputVazio" role="alert" hidden>
+          <h4 class="alert-heading">Seus dados estão incompletos!</h4>
+          <hr>
+          <p>Por favor, preencha os dados que faltam.</p>
+        </div>
         
         <button
           type="submit"
@@ -281,7 +286,8 @@
     <script src="../js/manipuladorDom.js"></script>
     <script src="../js/cepView.js"></script>
     <script src="../../controller/js/cepController.js"></script>
-    <script src="../../controller/js/inputController.js"></script>
+    <script src="../../controller/js/inputBorderController.js"></script>
+    <script src="../../controller/js/inputTamanhoController.js"></script>
     <script src="../../controller/js/msgController.js"></script>
     <script src="../../controller/js/cadastroSubmitController.js"></script>
 

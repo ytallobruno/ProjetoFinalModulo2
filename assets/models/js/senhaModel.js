@@ -1,7 +1,7 @@
 class GerenciadorDeSenha {
     
     confirma(item,itemReapeat){
-        const itemConfirmado = item === itemReapeat? true : false;
+        const itemConfirmado = item === itemReapeat
         return itemConfirmado
 
 }    
