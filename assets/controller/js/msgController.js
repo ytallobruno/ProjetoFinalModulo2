@@ -36,10 +36,10 @@ class ControladorDeAlertas extends ControladorTamanhoInput{
 
 
 const gerenciaEmail = new GerenciadorDeEmail();
+const controlaAlerta = new ControladorDeAlertas();
 
 $("#btn-submit").on('click', (event) => {
     event.preventDefault();
-    const controlaAlerta = new ControladorDeAlertas();
     const email = $('#email').val();
     const confirmadorEmail = gerenciaEmail.validaEmail(email);
     const verificador = controlaAlerta.verificaTamEmail() && controlaAlerta.verificaTamSenha();
@@ -48,7 +48,6 @@ $("#btn-submit").on('click', (event) => {
 
 $("#btn-recuperacaoSenha").on('click', (event) => {
     event.preventDefault();
-    const controlaAlerta = new ControladorDeAlertas();
     const email = $('#email').val();
     const confirmadorEmail = gerenciaEmail.validaEmail(email);
     const verificador = controlaAlerta.verificaTamEmail();
