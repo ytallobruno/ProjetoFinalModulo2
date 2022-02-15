@@ -12,7 +12,23 @@ class ControladorTamanhoInput {
         return verificadorSenha;
     }
 
+    verificaCadastro(){
+        const arrDados =[
+            $('#nome').val(),
+            $('#email').val(),
+            $('#senha').val(),
+            $('#senhaRepeat').val(),
+            $('#rg').val(),
+            $('#cep').val(),
+            $('#rua').val(),
+            $('#estado').val(),
+            $('#cidade').val(),            
+            $('#numero').val(),
+        ]
 
+        return arrDados.map(dado => dado.length!=0)
+
+    }
 
 }
 
