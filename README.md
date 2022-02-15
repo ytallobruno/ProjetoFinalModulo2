@@ -46,9 +46,10 @@
   - Pseudo-classes (CSS)
   - FlexBox (CSS)
   - Responsividade (CSS)
-  - Classes Bootstrap
+  - Utilização de Bootstrap
   - Function (JS)
   - Condicionais IF, Else (JS)
+  - Programação Orientada a Objetos (POO)
   - JQuery (JS)
   - Ajax (JQuery)
   - JSON
