@@ -49,6 +49,7 @@
   - Utilização de Bootstrap
   - Function (JS)
   - Condicionais IF, Else (JS)
+  - Lógica MVC
   - Programação Orientada a Objetos (POO)
   - JQuery (JS)
   - Ajax (JQuery)
