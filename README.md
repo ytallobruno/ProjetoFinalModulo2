@@ -78,5 +78,5 @@ Para contribuir com nosso projeto, siga estas etapas:
 <hr>
 
 <div align="center">
-  &#129145;&nbsp;<a href="#inicio"><strong>Voltar ao topo</strong></a>&nbsp;&#129145;
+  &#11165;&nbsp;<a href="#inicio"><strong>Voltar ao topo</strong></a>&nbsp;&#11165;
 </div>
