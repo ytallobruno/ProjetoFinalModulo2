@@ -73,7 +73,7 @@ Para contribuir com nosso projeto, siga estas etapas:
   - [Christopher Mamed](https://www.linkedin.com/in/christopher-mamed-407485139/)
   - [Hadassa Moraes](https://www.linkedin.com/in/hadassa-moraes-5a6712230/)
   - [Vitor Del' Duca](https://www.linkedin.com/in/vitor-del-duca-gestao-programacao-treinamento/)
-  - [Ytallo Bruno](https://https://linkedin.com/in/ytallobruno)
+  - [Ytallo Bruno](https://linkedin.com/in/ytallobruno)
 
 <hr>
 
